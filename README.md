@@ -46,4 +46,50 @@ This exercise demonstrated how machine-learning algorithms can classify samples 
 
 ### Exercise 2, Part 2
 
-To be completed.
+## Exercise 2, Part 2: MNIST Classification and YOLO Object Detection
+
+### Project Overview
+
+This exercise explores two applications of machine learning: handwritten-digit classification using the MNIST dataset and object detection using YOLOv5.
+
+### Part A: MNIST Handwritten-Digit Classification
+
+The MNIST dataset contains 70,000 images of handwritten digits ranging from 0 to 9. Three machine-learning models were trained and evaluated to compare their ability to classify handwritten digits.
+
+The models included Random Forest, Logistic Regression, and a Multilayer Perceptron (MLP) Neural Network.
+
+### MNIST Classification Results
+
+| Model | Test Accuracy |
+|---|---|
+| Random Forest | 96.75% |
+| Logistic Regression | 92.02% |
+| MLP Neural Network | 97.55% |
+
+### MNIST Accuracy Comparison
+
+![MNIST Classification Model Accuracy Comparison](graphs/mnist_model_accuracy_comparison.png)
+
+**Results:** The MLP Neural Network achieved the highest classification accuracy at 97.55%, followed by Random Forest at 96.75% and Logistic Regression at 92.02%.
+
+These results demonstrate that all three models performed well in recognizing handwritten digits. The MLP Neural Network achieved the strongest performance on the test dataset.
+
+### Part B: YOLO Object Detection
+
+The YOLOv5 object detection model was used to analyze an uploaded photograph containing a person.
+
+The model successfully detected the person and generated a bounding box around the subject with a confidence score of 0.58 (58%).
+
+### YOLO Detection Results
+
+![YOLO Person Detection](graphs/yolo_person_detection.png)
+
+**Results:** The model successfully identified a person within the uploaded image. The bounding box indicates the detected object's location, while the confidence score represents the model's confidence in that detection.
+
+Although the model detected the person, it did not specifically identify the face because the pretrained YOLOv5 model performs general object detection rather than dedicated facial detection.
+
+### Conclusion
+
+Exercise 2 demonstrated two important applications of machine learning. The MNIST classification task compared three models for recognizing handwritten digits, with the MLP Neural Network achieving the highest accuracy. The YOLO object detection task demonstrated how deep-learning-based computer vision can identify and locate objects within an image.
+
+Together, these exercises provided practical experience in classification, model evaluation, and object detection.
