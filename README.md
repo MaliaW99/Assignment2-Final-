@@ -44,7 +44,6 @@ All three models demonstrated strong classification performance. The results ind
 
 This exercise demonstrated how machine-learning algorithms can classify samples using chemical measurements. SVM and Logistic Regression performed slightly better than Decision Tree on the selected test set. Correct preprocessing helped ensure that the testing data did not influence the standardization of the training data.
 
-### Exercise 2, Part 2
 
 ## Exercise 2, Part 2: MNIST Classification and YOLO Object Detection
 
