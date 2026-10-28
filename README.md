@@ -111,6 +111,51 @@ The models included Random Forest, Logistic Regression, and a Multilayer Percept
 
 These results demonstrate that all three models performed well in recognizing handwritten digits. The MLP Neural Network achieved the strongest performance on the test dataset.
 
+### Part A-2: Fashion-MNIST Classification (New Dataset)
+
+#### Project Overview
+
+The Fashion-MNIST dataset was used to apply the machine-learning methods from the original MNIST classification exercise to a new dataset. Instead of identifying handwritten digits, the models classified grayscale images of clothing and accessories into 10 categories.
+
+The goal was to compare the classification performance of Random Forest, Logistic Regression, and a Multilayer Perceptron (MLP) Neural Network on the new dataset.
+
+#### Dataset Visualization
+
+Fashion-MNIST contains 70,000 grayscale images, each measuring 28 × 28 pixels. The images represent 10 clothing categories, including shirts, trousers, dresses, sneakers, and bags.
+
+![Fashion-MNIST Dataset Visualization](graphs/fashion_mnist_dataset_visualization.png)
+
+**Results:** The visualization displays one example from each clothing category. Some categories have similar shapes and appearances, making it challenging for classification models to distinguish between them.
+
+#### Data Preprocessing and Testing
+
+The images were converted into 784 numerical features, and pixel values were normalized from 0–255 to 0–1.
+
+The dataset was divided into 80% training data (56,000 images) and 20% testing data (14,000 images), using stratified sampling and `random_state=42`.
+
+Feature standardization was applied to Logistic Regression and the MLP Neural Network, while Random Forest used the normalized pixel values.
+
+#### Machine Learning Model Results
+
+| Model | Test Accuracy |
+|---|---|
+| Random Forest | 88.19% |
+| Logistic Regression | 84.21% |
+| MLP Neural Network | 88.75% |
+
+#### Model Accuracy Comparison
+
+![Fashion-MNIST Model Accuracy Comparison](graphs/fashion_mnist_model_accuracy_comparison.png)
+
+**Results:** The MLP Neural Network achieved the highest classification accuracy at 88.75%, followed closely by Random Forest at 88.19%. Logistic Regression achieved the lowest accuracy at 84.21%.
+
+#### Conclusion
+
+This exercise demonstrated how machine-learning models can classify clothing images using pixel-based features. All three models performed reasonably well, with the MLP Neural Network producing the strongest results.
+
+Compared with the original MNIST handwritten-digit classification, the models achieved lower accuracy on Fashion-MNIST. This suggests that recognizing clothing categories may be more challenging for these models, particularly when items have similar visual characteristics.
+
+Overall, applying the original machine-learning methods to a new dataset demonstrated how classification performance can vary depending on the type and complexity of the data.
 ### Part B: YOLO Object Detection
 
 The YOLOv5 object detection model was used to analyze an uploaded photograph containing a person.
