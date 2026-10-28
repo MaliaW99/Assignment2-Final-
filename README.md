@@ -43,7 +43,45 @@ All three models demonstrated strong classification performance. The results ind
 ### Conclusion
 
 This exercise demonstrated how machine-learning algorithms can classify samples using chemical measurements. SVM and Logistic Regression performed slightly better than Decision Tree on the selected test set. Correct preprocessing helped ensure that the testing data did not influence the standardization of the training data.
+## Exercise 2, Part 1: Breast Cancer Wisconsin Classification
 
+### Project Overview
+
+The Breast Cancer Wisconsin Diagnostic dataset was used as an additional dataset to apply and compare machine-learning classification models. The goal was to classify breast tissue samples as malignant or benign based on numerical measurements of cell nuclei.
+
+### Dataset Visualization
+
+The dataset contains 569 samples and 30 numerical features. A scatter plot was created to visualize the relationship between mean radius and mean texture for malignant and benign samples.
+
+![Breast Cancer Wisconsin Scatter Plot](graphs/breast_cancer_scatter_plot.png.png)
+
+**Results:** The scatter plot shows differences between malignant and benign samples, although some overlap is present. This indicates that mean radius and mean texture provide useful classification information, but additional features are important for distinguishing the two classes.
+
+### Data Preprocessing and Testing
+
+The dataset was divided into 70% training data (398 samples) and 30% testing data (171 samples), using `random_state=42` and stratified sampling.
+
+StandardScaler was fitted only on the training data and then applied to the testing data to prevent data leakage.
+
+### Machine Learning Model Results
+
+| Model | Test Accuracy |
+|---|---|
+| Support Vector Machine (SVM) | 98.25% |
+| Decision Tree | 91.81% |
+| Logistic Regression | 98.83% |
+
+### Model Accuracy Comparison
+
+![Breast Cancer Wisconsin Model Accuracy Comparison](graphs/breast_cancer_model_accuracy_comparison.png.png)
+
+**Results:** Logistic Regression achieved the highest accuracy at 98.83%, followed closely by SVM at 98.25%. Decision Tree achieved 91.81%, making it the lowest-performing model of the three.
+
+### Conclusion
+
+The Breast Cancer Wisconsin dataset demonstrated how machine-learning algorithms can classify biological samples using numerical features. Logistic Regression and SVM achieved strong performance in distinguishing malignant and benign samples, while Decision Tree performed slightly less accurately.
+
+This exercise provided experience in dataset preprocessing, classification, model comparison, and interpretation of biological data. Additional validation would be required before considering clinical applications.
 
 ## Exercise 2, Part 2: MNIST Classification and YOLO Object Detection
 
